@@ -10,7 +10,6 @@
     :root{
       --bg:#0b0c0f;
       --panel:#11141c;
-      --panel2:#0f1218;
       --text:#f3f4f6;
       --muted:#b7bcc7;
       --line:#242835;
@@ -43,7 +42,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.22);
     }
     .hero{
-      display:grid; grid-template-columns: 1.15fr .85fr; gap:14px;
+      display:grid; grid-template-columns: 1fr; gap:14px;
       padding:26px 0;
     }
     .hero h2{margin:0 0 10px; font-size:34px; line-height:1.12}
@@ -70,19 +69,11 @@
       border-color: rgba(230,193,90,.55);
     }
     .btn:hover{transform: translateY(-1px)}
-    .knife{
-      height:100%;
-      min-height:220px;
-      display:flex; align-items:center; justify-content:center;
-      position:relative; overflow:hidden;
-      background: radial-gradient(500px 240px at 50% 35%, rgba(230,193,90,.10) 0%, rgba(0,0,0,0) 70%);
-    }
-    .knife svg{width:100%; max-width:420px; opacity:.9}
     section{padding:18px 0}
     h3{margin:0 0 10px; font-size:18px}
     .grid{
       display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap:12px;
     }
     .item p{margin:8px 0 0; color:var(--muted); font-size:14px; line-height:1.55}
@@ -107,7 +98,6 @@
       display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
     }
     @media (max-width: 860px){
-      .hero{grid-template-columns:1fr}
       .grid{grid-template-columns:1fr}
       .split{grid-template-columns:1fr}
       nav{justify-content:flex-start}
@@ -141,7 +131,6 @@
         <div class="pillrow">
           <div class="pill">Private dinners (10–30)</div>
           <div class="pill">Catering trays</div>
-          <div class="pill">Menu planning</div>
           <div class="pill">Red Seal path</div>
         </div>
 
@@ -153,46 +142,6 @@
         <div class="help">
           Fastest response: Instagram DM. For detailed quotes, use the booking form below.
         </div>
-      </div>
-
-      <div class="card knife" aria-label="Knife graphic">
-        <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chef knife">
-          <defs>
-            <linearGradient id="blade" x1="0" x2="1">
-              <stop offset="0" stop-color="#e5e7eb" stop-opacity="0.95"/>
-              <stop offset="1" stop-color="#9ca3af" stop-opacity="0.85"/>
-            </linearGradient>
-            <linearGradient id="handle" x1="0" x2="1">
-              <stop offset="0" stop-color="#2b2f3c"/>
-              <stop offset="1" stop-color="#0f1117"/>
-            </linearGradient>
-          </defs>
-
-          <path d="M70 170 C210 70, 420 60, 650 85
-                   C700 90, 740 88, 785 78
-                   C800 75, 815 80, 820 92
-                   C830 120, 800 152, 755 156
-                   C720 160, 690 160, 655 155
-                   C520 135, 350 135, 210 185
-                   C165 200, 120 205, 90 198
-                   C70 194, 60 185, 70 170 Z"
-                fill="url(#blade)" stroke="#3b4255" stroke-width="6"/>
-
-          <path d="M140 165 C270 95, 450 85, 650 100"
-                fill="none" stroke="rgba(255,255,255,.35)" stroke-width="10" stroke-linecap="round"/>
-
-          <path d="M820 92
-                   C860 88, 890 110, 892 132
-                   C895 160, 870 184, 835 184
-                   L760 184
-                   C735 184, 720 170, 720 150
-                   L720 124
-                   C720 104, 735 92, 755 92 Z"
-                fill="url(#handle)" stroke="#3b4255" stroke-width="6"/>
-
-          <circle cx="790" cy="140" r="10" fill="#c7cad3" opacity="0.9"/>
-          <circle cx="835" cy="140" r="10" fill="#c7cad3" opacity="0.9"/>
-        </svg>
       </div>
     </div>
 
@@ -206,10 +155,6 @@
         <div class="card item">
           <strong>Catering Trays</strong>
           <p>Corporate lunches, family events, and meeting platters. Easy transport, clean presentation.</p>
-        </div>
-        <div class="card item">
-          <strong>Menu Planning</strong>
-          <p>Seasonal menu design, prep flow, and practical execution notes — built for real service.</p>
         </div>
       </div>
     </section>
@@ -266,7 +211,6 @@
                 <option>Private dinner</option>
                 <option>Small event</option>
                 <option>Catering trays</option>
-                <option>Menu planning</option>
               </select>
             </div>
           </div>
@@ -297,8 +241,8 @@
         </p>
 
         <p style="margin:12px 0 0; line-height:1.9">
-          <strong>Email:</strong> <a id="emailLink" href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br/>
-          <strong>Instagram:</strong> <a href="https://instagram.com/jayelynnmichaud" target="_blank" rel="noopener">@jayelynnmichaud</a>
+          <strong>Email:</strong> <a id="emailLink" href="mailto:jayelynnmichaud@gmail.com">jayelynnmichaud@gmail.com</a><br/>
+          <strong>Instagram:</strong> <a id="igLink" href="https://instagram.com/jayelynnmichaud" target="_blank" rel="noopener">@jayelynnmichaud</a>
         </p>
       </div>
     </section>
@@ -310,7 +254,7 @@
   </div>
 
   <script>
-    // === EDIT THESE TWO VALUES ===
+    // === EDIT THESE TWO VALUES (optional) ===
     const EMAIL = "jayelynnmichaud@gmail.com";
     const IG_HANDLE = "jayelynnmichaud";
 
@@ -322,9 +266,13 @@
     emailLink.textContent = EMAIL;
     emailLink.href = "mailto:" + EMAIL;
 
-    // Update IG button
+    // Update IG links
     const igBtn = document.getElementById("igBtn");
     igBtn.href = "https://instagram.com/" + IG_HANDLE;
+
+    const igLink = document.getElementById("igLink");
+    igLink.href = "https://instagram.com/" + IG_HANDLE;
+    igLink.textContent = "@" + IG_HANDLE;
 
     // Build booking email
     const sendEmail = document.getElementById("sendEmail");
