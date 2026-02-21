@@ -1,4 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jayelynn Michaud | Private Chef & Catering</title>
+  <meta name="description" content="Modern private chef services rooted in seasonal prairie ingredients. Alberta, Canada. Bookings by email or Instagram DM." />
 
+  <style>
+    :root{
+      --bg:#0b0c0f;
+      --panel:#11141c;
+      --panel2:#0f1218;
+      --text:#f3f4f6;
+      --muted:#b7bcc7;
+      --line:#242835;
+      --accent:#e6c15a;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1100px 600px at 15% 10%, #1a1d28 0%, var(--bg) 55%);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 64px}
+    header{
+      display:flex; justify-content:space-between; align-items:flex-start; gap:16px;
+      padding:10px 0 22px; border-bottom:1px solid var(--line);
+    }
+    .brand h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .brand p{margin:6px 0 0; color:var(--muted); font-size:14px; line-height:1.4}
+    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end; padding-top:4px}
+    nav a{color:var(--muted); text-decoration:none; font-size:14px}
+    nav a:hover{color:var(--text)}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+    .hero{
+      display:grid; grid-template-columns: 1.15fr .85fr; gap:14px;
+      padding:26px 0;
+    }
+    .hero h2{margin:0 0 10px; font-size:34px; line-height:1.12}
+    .hero p{margin:0 0 12px; color:var(--muted); font-size:16px; line-height:1.65}
+    .pillrow{display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 0}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line); background:rgba(255,255,255,.02);
+      color:var(--muted); font-size:13px;
+    }
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-weight:650;
+      font-size:14px;
+    }
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(230,193,90,.26), rgba(230,193,90,.10));
+      border-color: rgba(230,193,90,.55);
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .knife{
+      height:100%;
+      min-height:220px;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; overflow:hidden;
+      background: radial-gradient(500px 240px at 50% 35%, rgba(230,193,90,.10) 0%, rgba(0,0,0,0) 70%);
+    }
+    .knife svg{width:100%; max-width:420px; opacity:.9}
+    section{padding:18px 0}
+    h3{margin:0 0 10px; font-size:18px}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap:12px;
+    }
+    .item p{margin:8px 0 0; color:var(--muted); font-size:14px; line-height:1.55}
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
+    label{display:block; font-size:13px; color:var(--muted); margin:12px 0 6px}
+    input, textarea, select{
+      width:100%;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      color:var(--text);
+      padding:10px 12px;
+      font-size:15px;
+      outline:none;
+    }
+    textarea{min-height:120px; resize:vertical}
+    .help{font-size:12px; color:var(--muted); margin-top:8px; line-height:1.55}
+    footer{
+      margin-top:28px; padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted); font-size:13px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    }
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      nav{justify-content:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Jayelynn Michaud</h1>
+        <p>Modern private chef & catering • Seasonal Prairie-inspired menus • Alberta, Canada</p>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h2>Modern private dining, rooted in the Prairie season.</h2>
+        <p>
+          I create clean, elevated menus that still feel warm and real — built around seasonal ingredients,
+          smart prep, and professional execution. Available for private dinners, small events, and catered trays.
+        </p>
+
+        <div class="pillrow">
+          <div class="pill">Private dinners (10–30)</div>
+          <div class="pill">Catering trays</div>
+          <div class="pill">Menu planning</div>
+          <div class="pill">Red Seal path</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="#booking">Request a booking</a>
+          <a class="btn" id="igBtn" href="https://instagram.com/jayelynnmichaud" target="_blank" rel="noopener">DM on Instagram</a>
+        </div>
+
+        <div class="help">
+          Fastest response: Instagram DM. For detailed quotes, use the booking form below.
+        </div>
+      </div>
+
+      <div class="card knife" aria-label="Knife graphic">
+        <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chef knife">
+          <defs>
+            <linearGradient id="blade" x1="0" x2="1">
+              <stop offset="0" stop-color="#e5e7eb" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#9ca3af" stop-opacity="0.85"/>
+            </linearGradient>
+            <linearGradient id="handle" x1="0" x2="1">
+              <stop offset="0" stop-color="#2b2f3c"/>
+              <stop offset="1" stop-color="#0f1117"/>
+            </linearGradient>
+          </defs>
+
+          <path d="M70 170 C210 70, 420 60, 650 85
+                   C700 90, 740 88, 785 78
+                   C800 75, 815 80, 820 92
+                   C830 120, 800 152, 755 156
+                   C720 160, 690 160, 655 155
+                   C520 135, 350 135, 210 185
+                   C165 200, 120 205, 90 198
+                   C70 194, 60 185, 70 170 Z"
+                fill="url(#blade)" stroke="#3b4255" stroke-width="6"/>
+
+          <path d="M140 165 C270 95, 450 85, 650 100"
+                fill="none" stroke="rgba(255,255,255,.35)" stroke-width="10" stroke-linecap="round"/>
+
+          <path d="M820 92
+                   C860 88, 890 110, 892 132
+                   C895 160, 870 184, 835 184
+                   L760 184
+                   C735 184, 720 170, 720 150
+                   L720 124
+                   C720 104, 735 92, 755 92 Z"
+                fill="url(#handle)" stroke="#3b4255" stroke-width="6"/>
+
+          <circle cx="790" cy="140" r="10" fill="#c7cad3" opacity="0.9"/>
+          <circle cx="835" cy="140" r="10" fill="#c7cad3" opacity="0.9"/>
+        </svg>
+      </div>
+    </div>
+
+    <section id="services">
+      <h3>Services</h3>
+      <div class="grid">
+        <div class="card item">
+          <strong>Private Chef / Small Events</strong>
+          <p>In-home dinners, celebrations, and gatherings (10–30 guests). Custom menu + prep + service.</p>
+        </div>
+        <div class="card item">
+          <strong>Catering Trays</strong>
+          <p>Corporate lunches, family events, and meeting platters. Easy transport, clean presentation.</p>
+        </div>
+        <div class="card item">
+          <strong>Menu Planning</strong>
+          <p>Seasonal menu design, prep flow, and practical execution notes — built for real service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="split">
+      <div class="card">
+        <h3>About</h3>
+        <p style="margin:0;color:var(--muted);line-height:1.7">
+          I’m a culinary professional based in Alberta, focused on organized prep, consistent results, and thoughtful food.
+          My style blends modern private-dining presentation with Prairie seasonality and comfort.
+          <br><br>
+          If you’re looking for someone who shows up prepared, communicates clearly, and executes clean service — you’re in the right place.
+        </p>
+      </div>
+      <div class="card">
+        <h3>What to expect</h3>
+        <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.9">
+          <li>Clear quote + timeline</li>
+          <li>Seasonal ingredient options</li>
+          <li>Dietary accommodations when possible</li>
+          <li>Clean, professional execution</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h3>Booking request</h3>
+      <div class="card">
+        <p style="margin:0;color:var(--muted);line-height:1.7">
+          Fill this out and tap <strong>Send Booking Email</strong>. It will open your email app with everything pre-filled.
+          (If you prefer, you can DM me on Instagram.)
+        </p>
+
+        <form id="bookingForm" onsubmit="return false;">
+          <div class="split">
+            <div>
+              <label for="name">Your name</label>
+              <input id="name" name="name" placeholder="Full name" required />
+            </div>
+            <div>
+              <label for="date">Date (or range)</label>
+              <input id="date" name="date" placeholder="e.g., March 14, or March 14–16" required />
+            </div>
+          </div>
+
+          <div class="split">
+            <div>
+              <label for="guests">Guest count</label>
+              <input id="guests" name="guests" placeholder="e.g., 12" required />
+            </div>
+            <div>
+              <label for="service">Service type</label>
+              <select id="service" name="service">
+                <option>Private dinner</option>
+                <option>Small event</option>
+                <option>Catering trays</option>
+                <option>Menu planning</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="location">Location (city/area)</label>
+          <input id="location" name="location" placeholder="e.g., Calgary, AB" />
+
+          <label for="vibe">Vibe + notes</label>
+          <textarea id="vibe" name="vibe" placeholder="Tell me the vibe (comfort / upscale / rustic / modern), any must-haves, and dietary needs."></textarea>
+
+          <div class="cta" style="margin-top:14px">
+            <a class="btn primary" id="sendEmail" href="#">Send Booking Email</a>
+            <a class="btn" href="https://instagram.com/jayelynnmichaud" target="_blank" rel="noopener">DM on Instagram</a>
+          </div>
+
+          <div class="help">
+            Tip: If your email app opens blank, tap back once and try again — iOS sometimes needs a second attempt.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="card">
+        <p style="margin:0;color:var(--muted);line-height:1.7">
+          Email for quotes + details. Instagram DM for quick questions.
+        </p>
+
+        <p style="margin:12px 0 0; line-height:1.9">
+          <strong>Email:</strong> <a id="emailLink" href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br/>
+          <strong>Instagram:</strong> <a href="https://instagram.com/jayelynnmichaud" target="_blank" rel="noopener">@jayelynnmichaud</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Jayelynn Michaud</div>
+      <div>Modern private chef • Seasonal Prairie kitchen • Alberta</div>
+    </footer>
+  </div>
+
+  <script>
+    // === EDIT THESE TWO VALUES ===
+    const EMAIL = "YOUR_EMAIL_HERE";  // e.g., "jayelynnmichaud@gmail.com"
+    const IG_HANDLE = "jayelynnmichaud";
+
+    // Update year
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Update email link in Contact section
+    const emailLink = document.getElementById("emailLink");
+    emailLink.textContent = EMAIL;
+    emailLink.href = "mailto:" + EMAIL;
+
+    // Update IG button
+    const igBtn = document.getElementById("igBtn");
+    igBtn.href = "https://instagram.com/" + IG_HANDLE;
+
+    // Build booking email
+    const sendEmail = document.getElementById("sendEmail");
+    sendEmail.addEventListener("click", () => {
+      const name = document.getElementById("name").value.trim();
+      const date = document.getElementById("date").value.trim();
+      const guests = document.getElementById("guests").value.trim();
+      const service = document.getElementById("service").value;
+      const location = document.getElementById("location").value.trim();
+      const vibe = document.getElementById("vibe").value.trim();
+
+      const subject = encodeURIComponent("Booking Request — " + (service || "Private Chef"));
+      const body = encodeURIComponent(
+        "Hi Jayelynn,\n\n" +
+        "I’d like to inquire about a booking.\n\n" +
+        "Name: " + (name || "[Your name]") + "\n" +
+        "Date: " + (date || "[Date]") + "\n" +
+        "Guest count: " + (guests || "[#]") + "\n" +
+        "Service type: " + (service || "[Service]") + "\n" +
+        "Location: " + (location || "[City/Area]") + "\n\n" +
+        "Vibe / Notes / Dietary needs:\n" + (vibe || "[Details]") + "\n\n" +
+        "Thank you!"
+      );
+
+      window.location.href = "mailto:" + EMAIL + "?subject=" + subject + "&body=" + body;
+    });
+  </script>
+</body>
+</html>
 <!doctype html>
 <html lang="en">
 <head>
